@@ -699,7 +699,7 @@ var rule = {
     cate_exclude: '会员|游戏|全部',
     // class_name: '腾讯精选&腾讯电视剧&腾讯电影&腾讯综艺&腾讯动漫&腾讯少儿&腾讯纪录片',
     // class_url: 'choice&tv&movie&variety&cartoon&child&doco',
- 	class_name: '4k沐枫影视🕊️💚电视剧&4k沐枫影视🕊️💚电影&4k沐枫影视🕊️💚综艺&4k沐枫影视🕊️💚动漫&4k沐枫影视🕊️💚少儿&4k沐枫影视🕊️💚纪录片',
+ 	class_name: '4k影视🕊️💚电视剧&4k影视🕊️💚电影&4k影视🕊️💚综艺&4k影视🕊️💚动漫&4k影视🕊️💚少儿&4k影视🕊️💚纪录片',
 	class_url: 'tv&movie&variety&cartoon&child&doco',
     limit: 20,
     // play_parse:true,
@@ -809,7 +809,7 @@ var rule = {
                 let vid = video_lists[0];
                 url = "https://v.qq.com/x/cover/" + cid + "/" + vid + ".html";
                 d.push({
-                    title: "4k沐枫影视4k专属",
+                    title: "4k影视4k专属",
                     url: url
                 })
             } else if (video_lists.length > 1) {
@@ -840,7 +840,7 @@ var rule = {
         let zp = d.filter(function(it) {
             return !(it.type && it.type !== "正片")
         });
-        VOD.vod_play_from = yg.length < 1 ? "沐枫影视4K" : "❤️沐枫影视$$$沐枫影视";
+        VOD.vod_play_from = yg.length < 1 ? "影视4K" : "❤️影视$$$影视";
         VOD.vod_play_url = yg.length < 1 ? d.map(function(it) {
             return it.title + "$" + it.url
         }).join("#") : [zp, yg].map(function(it) {
